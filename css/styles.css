@@ -1,0 +1,92 @@
+/* CSS GOES HERE */
+html {
+    scroll-behavior: smooth;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.navbarcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.navbar {
+    text-align: right;
+    word-spacing: 40px;
+    padding-left: 370px;
+}
+.logo {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 35px;
+}
+
+.headercontainer {
+    display: flex;
+    align-items: center;
+}
+
+.headerimg { 
+    padding-right: 90px;
+}
+
+
+section {
+    width: 100%;
+    height: auto; 
+    min-height: 500px;
+    padding: 60px 40px;
+}
+section:nth-child(even) {
+    /* background-color: #f2f2f2; */
+    background-image: url(../images/rectangle.png);
+}
+.container {
+    width: 100%;
+    max-width: 960px;
+    text-align: left;
+    margin: 0 auto;
+}
+/* .headerflexcontainer {
+    display: flex;
+    flex-direction: column;
+} */
+
+.aboutflexcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+
+.skillflexcontainer {
+    font-size: 10pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.galleryflexcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+h1 {
+    font-size: 4.2em;
+}
+h2{
+    font-size: 4.2em;
+    margin: 0
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 0px;
+}

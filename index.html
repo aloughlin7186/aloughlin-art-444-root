@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="refresh" content="150">
   <title>Welcome to my new website!</title>
-  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 <style></style>
 
@@ -17,8 +20,9 @@
   <div class="container"> 
     <div class="navbarcontainer">
       <div class="logo">
-        <h4>GAELICA</h4>
-        <p>Ceramics & Design</p>
+        <!-- <h4>GAELICA</h4>
+        <p>Ceramics & Design</p> -->
+        <img src="images/logo.png" width="164" height="120">
       </div>
       <div class="navbar">
         <a href="#header">Home</a>
@@ -35,9 +39,15 @@
   <section id="header" class="header">
     <div class="container">
       <div class="headercontainer">
-        <h1 class="title">Welcome</h1>
-        <p>Hello! I'm Abi Loughlin, a ceramic artist and a graphic designer. Welcome to my work!</p>
-        <img src="images/rabbitsvg.svg" width="339" height="328"/>
+        <div class="headerimg"> 
+        <img src="images/rabbitsvg.svg" />
+        </div>
+        <div class="headerflexcontainer">
+          <div class="welcometitle">
+          <h2 class="title">Welcome.</h2>
+          </div>
+          <p>Hello! I'm Abi Loughlin, a ceramic artist and a graphic designer. Welcome to my work!</p>
+        </div>
       </div>
     </div>
   </section>
@@ -46,10 +56,15 @@
 <section id="about">
   <div class="container">
     <div class="aboutcontainer">
-      <h1 class="title">About</h1>
-      <p>Hello! I'm Abi “Gaelica” Loughlin, a ceramicist and graphic designer. While the two fields are very different, I have countless hours of experience working in both. I primarily focus on animal form and will incorporate them both into my sculptural and design work. I aim for rich storytelling and immersive experiences withing my work as a whole. I’m born and raised in San Diego, and I’m in my final semester at SDSU and graduating Spring 2025. Scroll down to see my skills and work!  
-      </p>
-      <img src="images/aboutphoto.jpg" width="201" height="259" />
+      <h1 class="title">About.</h1>
+      <div class="aboutflexcontainer">
+        <div class="aboutinfocontainer">
+        <p>Hello! I'm Abi “Gaelica” Loughlin, a ceramicist and graphic designer. While the two fields are very different, I have countless hours of experience working in both. I primarily focus on animal form and will incorporate them both into my sculptural and design work. I aim for rich storytelling and immersive experiences withing my work as a whole. I’m born and raised in San Diego, and I’m in my final semester at SDSU and graduating Spring 2025.  
+        </p>
+        <p>Scroll down to see my skills and work!</p>
+        </div>
+        <img src="images/aboutphoto.jpg" />
+      </div>
     </div>
   </div>
 </section>
@@ -58,7 +73,8 @@
 <section id="skills">
   <div class="container">
       <div class="skillscontainer">
-          <h1 class="title">Skills</h1>
+          <h1 class="title">Skills.</h1>
+      <div class="skillflexcontainer">
             <div class="figma">
               <img src="images/figmasvg.svg" />
               <h3>Figma</h3>
@@ -75,9 +91,11 @@
               <img src="images/teamworksvg.svg" />
               <h3>Teamwork</h3>
             </div>
+      </div>
+      <div class="skillflexcontainer">
             <div class="problemsolving">
               <img src="images/problemsvg.svg" />
-              <h3>Problem Solving</h3>
+              <h3>Problem Solver</h3>
             </div>
             <div class="research">
               <img src="images/researchsvg.svg" />
@@ -85,12 +103,13 @@
             </div>
             <div class="detailoreintated">
               <img src="images/detailsvg.svg" />
-              <h3>Detail Orientated</h3>
+              <h3>Detail Focused</h3>
             </div>
             <div class="kilnoperation">
               <img src="images/kilnsvg.svg" />
               <h3>Kiln Operation</h3>
             </div>
+      </div>
       </div>
   </div>
 </section>
@@ -99,34 +118,40 @@
 <section id="gallery">
   <div class="container">
     <div class="gallerycontainer">
-      <h1 class="title">Gallery</h1>
+      <h1 class="title">Gallery.</h1>
         <div class="imagegallery"> 
-          <div class="gargoyleimg">
-            <img src="images/gargoyle.jpg" />
+          <div class="galleryflexcontainer">
+            <div class="gargoyleimg">
+              <img src="images/gargoyle.jpg" />
+            </div>
+            <div class="creatureimg">
+              <img src="images/creaturecollection.png" />
+            </div>
+            <div class="lionimg">
+              <img src="images/lionphoto.jpg" />
+            </div>
           </div>
-          <div class="creatureimg">
-            <img src="images/creaturecollection.png" />
+          <div class="galleryflexcontainer"> 
+              <div class="rabbitcomm">
+                <img src="images/rabbitcomm.jpg" />
+              </div>
+              <div class="coyoteimg">
+                <img src="images/coyotebowl.jpg" />
+              </div>
+              <div class="jarsimg">
+                <img src="images/animaljars.jpg" />
+              </div>
           </div>
-          <div class="lionimg">
-            <img src="images/lionphoto.jpg" />
-          </div>
-          <div class="rabbitcomm">
-            <img src="images/rabbitcomm.jpg" />
-          </div>
-          <div class="coyoteimg">
-            <img src="images/coyotebowl.jpg" />
-          </div>
-          <div class="jarsimg">
-            <img src="images/animaljars.jpg" />
-          </div>
-          <div class="slowdownimg">
-            <img src="images/slowdown.jpg" />
-          </div>
-          <div class="famouscouplesimg">
-            <img src="images/famouscouples.jpg" />
-          </div>
-          <div class="howtoguineaimg">
-            <img src="images/howtoguinea.jpg" />
+          <div class="galleryflexcontainer"> 
+            <div class="slowdownimg">
+              <img src="images/slowdown.jpg" />
+            </div>
+            <div class="famouscouplesimg">
+              <img src="images/famouscouples.jpg" />
+            </div>
+            <div class="howtoguineaimg">
+              <img src="images/howtoguinea.jpg" />
+            </div>
           </div>
         </div>
     </div>
@@ -139,7 +164,7 @@
 <section id="faq">
   <div class="container">
     <div class="FAQcontainer">
-      <h1 class="title">Frequent Asked Questions</h1>
+      <h1 class="title">FAQs.</h1>
       <div class=ques1>
         <h3>When will you be graduating from SDSU?</h3>
         <p>I will be graudating SDSU Spring of 2025</p>
@@ -164,7 +189,7 @@
 <footer>
   <div class="container">
     <div class="footercontainer">
-      <!-- <p>Your Name Here. Copywrite © 2025, All Rights Reserved</p>-->
+      <p>Abi Loughlin. Copywrite © 2025, All Rights Reserved</p>
     </div>
   </div>
 </footer>
