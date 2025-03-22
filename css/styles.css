@@ -72,12 +72,23 @@ section:nth-child(even) {
     flex-direction: row;
     justify-content: space-around;
 }
+
 .galleryflexcontainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 10px;
 }
+
+h3 {
+    background-color: orange;
+    background-size: 50px;
+    padding: 20px;  
+    width: 900px;     
+    height: auto;     
+    border-radius: 10px; 
+}
+
 h1 {
     font-size: 4.2em;
 }

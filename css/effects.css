@@ -1,0 +1,41 @@
+
+
+a:hover {
+    background-color: orange;
+    font-size: 18px;
+  }
+
+ 
+a:link {
+    color: black;
+  }
+  
+  
+a:visited {
+color: black;
+}
+  
+a:active {
+    color: orange;
+  } 
+
+.ques {
+    background-color: gainsboro;
+    padding: 20px;
+    display: none;  
+    width: 900px;     
+    height: auto;     
+    border-radius: 10px;
+  }
+    
+h3:hover + div {
+    display: block;
+  }
+
+h1:hover {
+    color: orange;
+  }
+
+  h2:hover {
+    color: orange;
+  }
