@@ -39,3 +39,7 @@ h1:hover {
   h2:hover {
     color: orange;
   }
+
+  .img:hover {
+    zoom: 130%;
+  }
