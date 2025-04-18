@@ -3,6 +3,7 @@
 a:hover {
     background-color: orange;
     font-size: 18px;
+    border-radius: 3px;
   }
 
  
@@ -10,7 +11,7 @@ a:link {
     color: black;
   }
   
-  
+
 a:visited {
 color: black;
 }
@@ -19,27 +20,40 @@ a:active {
     color: orange;
   } 
 
-.ques {
+  .ques {
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+  }
+
+/* .ques {
     background-color: gainsboro;
     padding: 20px;
     display: none;  
     width: 900px;     
     height: auto;     
     border-radius: 10px;
-  }
+  } */
     
-h3:hover + div {
+/* h3:hover + div {
+    display: block;
+  } */
+
+  h3:hover + div {
     display: block;
   }
 
-h1:hover {
-    color: orange;
+.img {
+  transition: all .7s;
+}
+
+.img:hover {
+    transform: scale(1.5)
   }
 
-  h2:hover {
-    color: orange;
-  }
-
-  .img:hover {
-    zoom: 130%;
-  }

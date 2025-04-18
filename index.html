@@ -18,24 +18,58 @@
 </head>
 <body>
 
-<nav>
+  <div onclick="myMenu()" class="mobile_menu" id="menubutton"></div>
+
+  <div class="navbarcontainer">
+    <div class="logo">
+      <!-- Your logo image -->
+      <img src="images/logo.png" width="164" height="120">
+    </div>
+    <div class="navbar">
+      <a class="navlink" href="#header">Home</a>
+      <a class="navlink" href="#about">About</a>
+      <a class="navlink" href="#skills">Skills</a>
+      <a class="navlink" href="#gallery">Gallery</a>
+      <a class="navlink" href="#faqs">FAQs</a>
+      <a class="navlink" href="#contact">Contact</a>
+    </div>
+  </div>
+  
+  <!-- Mobile Popout Menu -->
+  <div id="mymenu" class="mobile-menu-popout">
+    <div class="mobile-column">
+      <a onclick="closemenu()" class="navlink" href="#header">Home</a>
+      <a onclick="closemenu()" class="navlink" href="#about">About</a>
+      <a onclick="closemenu()" class="navlink" href="#skills">Skills</a>
+      <a onclick="closemenu()" class="navlink" href="#gallery">Gallery</a>
+      <a onclick="closemenu()" class="navlink" href="#faqs">FAQs</a>
+      <a onclick="closemenu()" class="navlink" href="#contact">Contact</a>
+    </div>
+  </div>
+  
+
+<!-- <nav>
   <div class="container"> 
     <div class="navbarcontainer">
       <div class="logo">
-        <!-- <h4>GAELICA</h4>
-        <p>Ceramics & Design</p> -->
         <img src="images/logo.png" width="164" height="120">
       </div>
-      <div class="navbar">
+
+      <div class="menu-button" onclick="myMenu()">☰</div>
+
+
+      <div id="mymenu" class="navbar">
         <a href="#header">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#gallery">Gallery</a>
         <a href="#faq">FAQs</a>
       </div>
+      
+      
     </div>
   </div>
-</nav>
+</nav> -->
 
 <!-- MAIN HEADER --> 
   <section id="header" class="header">
@@ -77,7 +111,7 @@
       <div class="skillscontainer">
           <h1 class="title">Skills.</h1>
       <div class="skillflexcontainer">
-          <div class="responsiveskills">
+          <!-- <div class="responsiveskills"> -->
               <div class="figma">
                 <img src="images/figmasvg.svg" />
                 <h4>Figma</h4>
@@ -86,8 +120,8 @@
                 <img src="images/adobesvg.svg" />
                 <h4>Adobe Products</h4>
               </div>
-            </div>
-            <div class="responsiveskills">
+            <!-- </div> -->
+            <!-- <div class="responsiveskills"> -->
               <div class="ceramics">
                 <img src="images/ceramicssvg.svg" />
                 <h4>Ceramics</h4>
@@ -96,10 +130,10 @@
                 <img src="images/teamworksvg.svg" />
                 <h4>Teamwork</h4>
               </div>
-            </div>
+            <!-- </div> -->
       </div>
       <div class="skillflexcontainer">
-        <div class="responsiveskills">
+        <!-- <div class="responsiveskills"> -->
             <div class="problemsolving">
               <img src="images/problemsvg.svg" />
               <h4>Problem Solver</h4>
@@ -108,8 +142,8 @@
               <img src="images/researchsvg.svg" />
               <h4>Research</h4>
             </div>
-          </div>
-       <div class="responsiveskills"> 
+          <!-- </div> -->
+       <!-- <div class="responsiveskills">  -->
             <div class="detailoreintated">
               <img src="images/detailsvg.svg" />
               <h4>Detail Focused</h4>
@@ -118,7 +152,7 @@
               <img src="images/kilnsvg.svg" />
               <h4>Kiln Operation</h4>
             </div>
-        </div>    
+        <!-- </div>     -->
       </div>
       </div>
   </div>
@@ -204,6 +238,11 @@
   </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/script.js">
+
+
+
+
+</script>
 </body>
 </html>

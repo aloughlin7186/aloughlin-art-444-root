@@ -158,11 +158,16 @@ footer {
     }
 
 
-    .responsiveskills {
+    /* .responsiveskills {
         flex-direction: row; 
         align-items: center;
     }
-    
+     */
+
+     .skillflexcontainer {
+        flex-direction: column;
+        align-items: center;
+     }
     
     .galleryflexcontainer {
         flex-direction: column; 
@@ -192,5 +197,71 @@ footer {
         text-align: center; 
         padding: 20px;
     }
-}
+
+    h3 {
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 15px;
+    }
+    .ques {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+      }
+
+
+
+/*       
+        .menu-button {
+          display: inline;
+        }
+      
+        .navbar {
+          display: none;
+          flex-direction: column;
+          gap: 10px;
+          background-color: #f2f2f2;
+          padding: 10px;
+          width: 100%;
+          text-align: center;
+        }
+      
+        .navbar.revealMenu {
+          display: flex !important;
+        } */
+
+
+        .navbar {
+            display: none;
+          }
+        
+          .mobile_menu {
+            display: block;
+          }
+        
+        
+        
+      }
+      
+      
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
   
