@@ -14,20 +14,27 @@ body {
 }
 .navbarcontainer {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    flex-wrap: nowrap;
 }
 
 .navbar {
-    text-align: right;
-    word-spacing: 40px;
-    padding-left: 370px;
+    display: flex;
+    gap: 30px; 
+    padding: 0; 
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
+
 .logo {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-bottom: 35px;
+    padding: 0;
 }
+
 
 .headercontainer {
     display: flex;
@@ -46,8 +53,8 @@ section {
     padding: 60px 40px;
 }
 section:nth-child(even) {
-    /* background-color: #f2f2f2; */
-    background-image: url(../images/rectangle.png);
+    background-color: #f3f5d0;
+    /* background-image: url(../images/rectangle.png); */
 }
 .container {
     width: 100%;
@@ -55,10 +62,6 @@ section:nth-child(even) {
     text-align: left;
     margin: 0 auto;
 }
-/* .headerflexcontainer {
-    display: flex;
-    flex-direction: column;
-} */
 
 .aboutflexcontainer {
     display: flex;
@@ -147,3 +150,93 @@ footer {
   }
   
   
+
+
+
+
+  .body-dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+  
+  .h2-dark {
+    color: #f5f5f5;
+  }
+  
+  .navlink-dark {
+    color: #f5f5f5;
+  }
+  
+  .qbox_dark {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .questiondark {
+    color: #f5f5f5;
+  }
+  
+  .gallery_dark {
+    background-color: #1a1a1a;
+  }
+  
+  .input_dark {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  .logo-dark img {
+    filter: brightness(0.8);
+  }
+  
+  .light-mode {
+    background-image: url('../images/sun.png');
+  }
+  
+  .faqtitle_dark {
+    color: #f5f5f5;
+  }
+  
+  .contact_dark, .form_dark, .label_dark, .message_dark, .send_dark, .footer_dark {
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  .mobile-menu-popout-dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .body-dark-mode section:nth-child(even) {
+    background-color: #514c3c; /* dark brown */
+}
+
+
+  .darkmode_button {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: url('../images/moonicon.png') no-repeat center;
+    background-size: contain;
+    transition: background-image 0.3s ease;
+    margin-left: auto; 
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+
+  
+  .light-mode {
+    background: url('../images/sunicon.png') no-repeat center !important;
+    background-size: contain !important;
+  }
+  
+  
+
+.body-dark-mode .navbar a {
+    color: #ffffff; 
+}
