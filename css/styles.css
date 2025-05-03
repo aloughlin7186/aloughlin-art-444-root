@@ -214,8 +214,8 @@ footer {
 
 
   .darkmode_button {
-    width: 60px;
-    height: 60px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
     background: url('../images/moonicon.png') no-repeat center;
     background-size: contain;
@@ -239,4 +239,12 @@ footer {
 
 .body-dark-mode .navbar a {
     color: #ffffff; 
+}
+
+
+.headerimg img {
+    width: auto;
+    height: 500px; 
+    max-width: 100%;
+    display: block;
 }

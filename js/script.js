@@ -45,4 +45,21 @@ function myMenu() {
   document.querySelectorAll('.question').forEach(el => el.classList.toggle('questiondark'));
   document.querySelectorAll('input').forEach(el => el.classList.toggle('input_dark'));
   document.querySelector('footer')?.classList.toggle('footer_dark');
+  
+
+
+    // Add this logic for image swapping
+    const isDark = document.body.classList.contains('body-dark-mode');
+
+    // Change logo image
+    const logoImg = document.querySelector('.logo img');
+    if (logoImg) {
+      logoImg.src = isDark ? 'images/darkmodelogo.png' : 'images/logo.png'; // placeholder path
+    }
+  
+    // Change rabbit SVG image
+    const rabbitImg = document.querySelector('.headerimg img');
+    if (rabbitImg) {
+      rabbitImg.src = isDark ? 'images/darkmodelogo.svg' : 'images/rabbitsvg.svg'; // placeholder path
+    }
   }
