@@ -48,18 +48,47 @@ function myMenu() {
   
 
 
-    // Add this logic for image swapping
+  
     const isDark = document.body.classList.contains('body-dark-mode');
 
-    // Change logo image
+  
     const logoImg = document.querySelector('.logo img');
     if (logoImg) {
-      logoImg.src = isDark ? 'images/darkmodelogo.png' : 'images/logo.png'; // placeholder path
+      logoImg.src = isDark ? 'images/darkmodelogo.png' : 'images/logo.png'; 
     }
   
-    // Change rabbit SVG image
+    
     const rabbitImg = document.querySelector('.headerimg img');
     if (rabbitImg) {
-      rabbitImg.src = isDark ? 'images/darkmodelogo.svg' : 'images/rabbitsvg.svg'; // placeholder path
+      rabbitImg.src = isDark ? 'images/darkmodelogo.svg' : 'images/rabbitsvg.svg'; 
     }
   }
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var acc = document.getElementsByClassName("accordion");
+  
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        
+        for (var j = 0; j < acc.length; j++) {
+          acc[j].classList.remove("active");
+          acc[j].nextElementSibling.style.display = "none";
+        }
+  
+        
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "none") {
+          panel.style.display = "block";
+        } else {
+          panel.style.display = "none";
+        }
+      });
+    }
+  });
+  
+
+  

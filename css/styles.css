@@ -42,19 +42,19 @@ body {
 }
 
 .headerimg { 
-    padding-right: 90px;
+    width: 100%;
 }
 
 
 section {
-    width: 100%;
-    height: auto; 
-    min-height: 500px;
-    padding: 60px 40px;
+    padding: 40px 0;
 }
+
+
 section:nth-child(even) {
-    background-color: #f3f5d0;
+    background-color: #dbdbd5;
     /* background-image: url(../images/rectangle.png); */
+   
 }
 .container {
     width: 100%;
@@ -209,7 +209,7 @@ footer {
   }
   
   .body-dark-mode section:nth-child(even) {
-    background-color: #514c3c; /* dark brown */
+    background-color: #514c3c; 
 }
 
 
@@ -248,3 +248,71 @@ footer {
     max-width: 100%;
     display: block;
 }
+
+
+
+
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-left: 3px solid orange;
+    margin-bottom: 15px;
+  }
+  
+
+  .accordion {
+    background-color: orange; 
+    color: rgb(0, 0, 0); 
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    color: black; 
+    display: none;
+    overflow: hidden;
+    border-left: 3px solid orange;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+  
+  
+  .body-dark-mode .panel {
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
